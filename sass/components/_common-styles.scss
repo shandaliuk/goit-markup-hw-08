@@ -5,18 +5,15 @@ body {
 }
 
 .container {
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   /* outline: 2px solid skyblue; */
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .title {
