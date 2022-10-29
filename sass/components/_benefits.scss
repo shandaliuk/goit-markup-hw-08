@@ -3,12 +3,18 @@
 }
 
 .benefits__list {
-  display: flex;
-  column-gap: 30px;
+  // display: flex;
+  // column-gap: 30px;
 }
 
 .benefits__item {
-  width: calc((100% - 3 * 30px) / 4);
+  // width: calc((100% - 3 * 30px) / 4);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .benefits__title {
@@ -16,7 +22,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
