@@ -7,11 +7,12 @@
   text-decoration: none;
   color: $black-color;
 
-  // &--footer {
-  //   display: block;
-  //   margin-bottom: 20px;
-  //   color: $white-color;
-  // }
+  &--footer {
+    display: block;
+    margin-bottom: 20px;
+    color: $white-color;
+    text-align: center;
+  }
 }
 
 // .header__logo {
