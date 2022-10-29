@@ -1,0 +1,44 @@
+body {
+  background-color: $white-color;
+  color: $main-text-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 2px solid skyblue; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title {
+  color: $secondary-text-color;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  transition: background-color $transition-info;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
