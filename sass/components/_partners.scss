@@ -1,17 +1,19 @@
 .partners__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
 .partners__list {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 30px;
 }
 
 .partners__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 

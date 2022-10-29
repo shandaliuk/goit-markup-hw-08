@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px) {
+  .activities {
+    display: none;
+  }
+}
+
 .activities__list {
   display: flex;
   column-gap: 30px;
