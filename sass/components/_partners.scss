@@ -15,6 +15,10 @@
 .partners__item {
   width: calc((100% - 30px) / 2);
   height: 92px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .partners__link {

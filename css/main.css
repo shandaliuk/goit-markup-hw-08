@@ -56,10 +56,21 @@ body {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title {
@@ -381,9 +392,24 @@ body {
   padding-right: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -465,6 +491,16 @@ body {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+
 .team__main-title {
   margin-bottom: 30px;
   color: #2f303a;
@@ -482,7 +518,6 @@ body {
 
 .team__image {
   width: 100%;
-  height: 100%;
 }
 
 .team__title {
@@ -508,6 +543,11 @@ body {
 @media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -567,6 +607,11 @@ body {
   width: calc((100% - 30px) / 2);
   height: 92px;
 }
+@media screen and (min-width: 768px) {
+  .partners__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 
 .partners__link {
   display: flex;
@@ -588,6 +633,16 @@ body {
   width: 106px;
   height: 60px;
   fill: currentColor;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  -moz-column-gap: 165px;
+       column-gap: 165px;
+  row-gap: 60px;
 }
 
 .footer {
@@ -647,7 +702,7 @@ body {
 
 .subscription__input {
   display: block;
-  width: 100%;
+  width: 450px;
   padding: 15px 16px;
   margin-left: auto;
   margin-right: auto;
