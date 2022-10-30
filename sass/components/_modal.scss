@@ -8,11 +8,16 @@
   visibility: visible;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $transition-info, visibility $transition-info;
+  overflow-y: scroll;
 
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 93px 15px 94px 15px;
   }
 }
 
@@ -29,10 +34,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: $white-color;
 
-  overflow-y: scroll;
-
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  @media screen and (max-width: 479px) {
+    position: relative;
+    width: 100%;
   }
 }
 

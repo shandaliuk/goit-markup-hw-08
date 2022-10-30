@@ -1,0 +1,28 @@
+.social-platform {
+  display: flex;
+  column-gap: 10px;
+}
+
+.social-platform__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    display: flex;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-left: 10px;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+
+.social-platform__link {
+  color: $accent-color;
+}
