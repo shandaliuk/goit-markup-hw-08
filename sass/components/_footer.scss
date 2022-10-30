@@ -13,12 +13,6 @@
   background-color: $secondary-background-color;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__wrapper:not(:last-child) {
-    margin-bottom: 60px;
-  }
-}
-
 .address {
   width: 232px;
   margin: 0 auto;
@@ -90,6 +84,10 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 467px) {
+    width: 100%;
   }
 }
 

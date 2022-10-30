@@ -144,6 +144,7 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation__list {
@@ -358,6 +359,8 @@ body {
 .hero {
   max-width: 480px;
   height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-bgi-mobile.jpg");
@@ -365,13 +368,20 @@ body {
   background-position: center;
   /* background-color: var(--secondary-background-color); */
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bgi-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bgi.jpg);
   }
 }
 
@@ -386,10 +396,25 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
 
 .hero__button {
   padding-left: 24px;
   padding-right: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -651,11 +676,6 @@ body {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__wrapper:not(:last-child) {
-    margin-bottom: 60px;
-  }
-}
 .address {
   width: 232px;
   margin: 0 auto;
@@ -732,6 +752,11 @@ body {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 467px) {
+  .subscription__input {
+    width: 100%;
+  }
 }
 
 .subscription__button {
