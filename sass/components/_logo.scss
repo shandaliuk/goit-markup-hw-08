@@ -15,9 +15,11 @@
   }
 }
 
-// .header__logo {
-//   margin-right: 93px;
-// }
+.header__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+}
 
 .logo__part {
   color: $accent-color;

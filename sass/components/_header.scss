@@ -1,18 +1,22 @@
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .header__container {
-  // display: flex;
-  // align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navigation__list {
@@ -56,29 +60,8 @@
     }
   }
 
-  &--contacts {
-    display: flex;
-    align-items: center;
-    color: $main-text-color;
-  }
-
   &:hover,
   &:focus {
     color: $accent-color;
-  }
-}
-
-.navigation__icon {
-  margin-right: 10px;
-  fill: currentColor;
-
-  &--envelope {
-    width: 16px;
-    height: 12px;
-  }
-
-  &--mobile-phone {
-    width: 10px;
-    height: 16px;
   }
 }

@@ -2,6 +2,7 @@
   background-color: $white-color;
   border: none;
   color: $secondary-text-color;
+  transition: color $transition-info;
 
   &--close {
     position: absolute;
@@ -58,9 +59,14 @@
 
 .mobile-menu__link {
   color: $secondary-text-color;
+  transition: color $transition-info;
 
   &:hover,
   &:focus {
+    color: $accent-color;
+  }
+
+  &--current {
     color: $accent-color;
   }
 }
