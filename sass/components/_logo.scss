@@ -13,11 +13,20 @@
     color: $white-color;
     text-align: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
   @media screen and (min-width: 768px) {
     margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }
 

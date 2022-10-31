@@ -2,6 +2,12 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+  }
 }
 
 .contacts {
@@ -18,7 +24,7 @@
     margin-bottom: 32px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 }
@@ -44,6 +50,10 @@
     font-size: 12px;
   }
 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -57,10 +67,20 @@
   &--envelope {
     width: 14px;
     height: 10px;
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
   }
 
   &--mobile-phone {
     width: 10px;
     height: 14px;
+
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
