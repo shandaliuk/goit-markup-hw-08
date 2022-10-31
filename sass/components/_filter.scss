@@ -1,8 +1,15 @@
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   column-gap: 8px;
+  row-gap: 15px;
+
+  @media screen and (max-width: 767px) {
+    width: 326px;
+    justify-content: start;
+  }
 }
 
 .filter__button {

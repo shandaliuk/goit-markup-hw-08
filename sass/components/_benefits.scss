@@ -5,21 +5,16 @@
 }
 
 .benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
     column-gap: 30px;
-    row-gap: 30px;
   }
 }
 
 .benefits__item {
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }

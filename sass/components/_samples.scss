@@ -3,10 +3,14 @@
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    column-gap: 30px;
+  }
 }
 
 .samples__item {
-  width: calc(((100% - 2 * 30px) / 3));
+  // width: calc(((100% - 2 * 30px) / 3));
   background-color: $white-color;
 }
 
@@ -42,6 +46,7 @@
 .samples__image {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .samples__text {
