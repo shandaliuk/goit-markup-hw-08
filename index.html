@@ -136,7 +136,7 @@
           <ul class="activities__list">
             <li class="activities__item">
               <img
-                src="./images/typing.jpg"
+                srcset="./images/typing.jpg 1x, ./images/typing@2x.jpg 2x"
                 alt="Програмування"
                 width="370"
                 height="294"
@@ -148,7 +148,7 @@
             </li>
             <li class="activities__item">
               <img
-                src="./images/phone.jpg"
+                srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
                 alt="Створення макету"
                 width="370"
                 height="294"
@@ -160,7 +160,7 @@
             </li>
             <li class="activities__item">
               <img
-                src="./images/tablet.jpg"
+                srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x"
                 alt="Оформлення дизайну"
                 width="370"
                 height="294"
@@ -178,7 +178,36 @@
           <h2 class="team__main-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/ihor-demianenko.jpg" alt="Ігор Дем'яненко" class="team__image" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ihor-demianenko-desktop.jpg    1x,
+                    ./images/ihor-demianenko-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-demianenko-tablet.jpg    1x,
+                    ./images/ihor-demianenko-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-demianenko-mobile.jpg    1x,
+                    ./images/ihor-demianenko-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/ihor-demianenko-mobile.jpg"
+                  alt="Ігор Дем'яненко"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="title team__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -215,7 +244,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olha-riepina.jpg" alt="Ольга Рєпіна" class="team__image" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olha-riepina-desktop.jpg    1x,
+                    ./images/olha-riepina-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/olha-riepina-tablet.jpg    1x,
+                    ./images/olha-riepina-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <source
+                  srcset="
+                    ./images/olha-riepina-mobile.jpg    1x,
+                    ./images/olha-riepina-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/olha-riepina-mobile.jpg"
+                  alt="Ольга Рєпіна"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="title team__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -252,7 +310,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mykola-tarasov.jpg" alt="Микола Тарасов" class="team__image" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-desktop.jpg    1x,
+                    ./images/mykola-tarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-tablet.jpg    1x,
+                    ./images/mykola-tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-mobile.jpg    1x,
+                    ./images/mykola-tarasov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mykola-tarasov-mobile.jpg"
+                  alt="Микола Тарасов"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="title team__title">Микола Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -289,7 +376,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mykhailo-yermakov.jpg" alt="Михайло Єрмаков" class="team__image" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailo-yermakov-desktop.jpg    1x,
+                    ./images/mykhailo-yermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-yermakov-tablet.jpg    1x,
+                    ./images/mykhailo-yermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-yermakov-mobile.jpg    1x,
+                    ./images/mykhailo-yermakov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mykhailo-yermakov-mobile.jpg"
+                  alt="Михайло Єрмаков"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="title team__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
