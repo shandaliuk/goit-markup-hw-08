@@ -629,10 +629,6 @@ body {
   }
 }
 
-.team__image {
-  width: 100%;
-}
-
 .team__title {
   margin-bottom: 10px;
   font-weight: 500;
@@ -1158,6 +1154,16 @@ body {
     justify-content: start;
   }
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
 
 .filter__button {
   padding: 6px 22px;
@@ -1184,8 +1190,6 @@ body {
 .samples {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
   row-gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1198,6 +1202,16 @@ body {
 .samples__item {
   background-color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .samples__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .samples__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 
 .samples__link {
   display: block;
@@ -1208,6 +1222,10 @@ body {
 }
 .samples__link:hover, .samples__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.samples__link--first {
+  display: flex;
+  flex-direction: column;
 }
 
 .samples__title {
@@ -1223,6 +1241,9 @@ body {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+.samples__item:first-child .samples__text-wrapper {
+  flex-grow: 1;
 }
 
 .samples__image {
