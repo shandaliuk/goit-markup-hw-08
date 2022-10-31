@@ -373,8 +373,10 @@ body {
 
 .social-platform {
   display: flex;
+  flex-wrap: wrap;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  row-gap: 10px;
 }
 
 .social-platform__item {
@@ -818,6 +820,11 @@ body {
   background-color: #2f303a;
 }
 
+@media screen and (max-width: 757px) {
+  .footer__wrapper:last-child {
+    flex-grow: 1;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__wrapper:last-child {
     margin-left: auto;
@@ -842,7 +849,7 @@ body {
 
 .subscription__input {
   display: block;
-  width: 450px;
+  width: 100%;
   padding: 15px 16px;
   margin-left: auto;
   margin-right: auto;
@@ -873,9 +880,9 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 467px) {
+@media screen and (min-width: 768px) {
   .subscription__input {
-    width: 100%;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
