@@ -7,7 +7,7 @@
   row-gap: 15px;
 
   @media screen and (max-width: 767px) {
-    width: 326px;
+    max-width: 326px;
     justify-content: start;
   }
 
