@@ -12,6 +12,12 @@
   /* background-color: var(--secondary-background-color); */
   text-align: center;
 
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-size: contain;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-bgi-mobile@2x.jpg);
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
