@@ -1,10 +1,13 @@
 .footer__container {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
-  justify-content: center;
-  column-gap: 165px;
-  row-gap: 60px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    column-gap: 165px;
+    row-gap: 60px;
+  }
 }
 
 .footer {
@@ -13,40 +16,8 @@
   background-color: $secondary-background-color;
 }
 
-.address {
-  width: 232px;
-  margin: 0 auto;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-.address__item {
-  display: block;
-
-  &:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-
-.address__location {
-  margin-bottom: 8px;
-}
-
-.address__link {
-  color: rgba(255, 255, 255, 0.6);
-  transition: color $transition-info;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.address__location {
-  color: $white-color;
+.footer__wrapper:last-child {
+  margin-left: auto;
 }
 
 .footer__text {
@@ -58,6 +29,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $white-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscription__input {
@@ -66,7 +41,6 @@
   padding: 15px 16px;
   margin-left: auto;
   margin-right: auto;
-  // margin-right: 12px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -89,10 +63,18 @@
   @media screen and (max-width: 467px) {
     width: 100%;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 .subscription__wrapper {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscription__button {

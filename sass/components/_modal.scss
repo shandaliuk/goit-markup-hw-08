@@ -42,13 +42,21 @@
     position: relative;
     width: 100%;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal__title {
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__list {

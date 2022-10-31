@@ -39,6 +39,7 @@
 
   &--number {
     font-size: 34px;
+    line-height: 1.18;
     color: $accent-color;
   }
 
@@ -52,6 +53,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
+    line-height: 1.14;
   }
 
   &:hover,

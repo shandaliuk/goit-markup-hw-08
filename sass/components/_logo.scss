@@ -12,6 +12,10 @@
     margin-bottom: 20px;
     color: $white-color;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   @media screen and (min-width: 1200px) {

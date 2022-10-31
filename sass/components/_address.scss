@@ -1,0 +1,41 @@
+.address {
+  width: 232px;
+  margin: 0 auto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-right: 50px;
+    text-align: left;
+  }
+}
+
+.address__item {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.address__location {
+  margin-bottom: 8px;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $transition-info;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__location {
+  color: $white-color;
+}
