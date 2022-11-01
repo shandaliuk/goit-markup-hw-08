@@ -16,6 +16,12 @@
   background-color: $secondary-background-color;
 }
 
+.footer__wrapper:first-child {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+
 .footer__wrapper:last-child {
   @media screen and (max-width: 757px) {
     flex-grow: 1;

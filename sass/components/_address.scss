@@ -1,5 +1,4 @@
 .address {
-  width: 232px;
   margin: 0 auto;
   font-style: normal;
   font-size: 14px;
@@ -8,8 +7,6 @@
   text-align: center;
 
   @media screen and (min-width: 1200px) {
-    width: 231px;
-    margin-right: 50px;
     text-align: left;
   }
 }

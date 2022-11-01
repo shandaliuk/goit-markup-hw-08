@@ -760,7 +760,6 @@ body {
 }
 
 .address {
-  width: 232px;
   margin: 0 auto;
   font-style: normal;
   font-size: 14px;
@@ -770,8 +769,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .address {
-    width: 231px;
-    margin-right: 50px;
     text-align: left;
   }
 }
@@ -817,6 +814,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__wrapper:first-child {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 757px) {
